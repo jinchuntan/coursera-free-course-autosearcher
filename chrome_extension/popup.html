@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coursera Truly-Free Scanner</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Coursera Truly-Free Scanner</h1>
+      <p class="muted">Scans only the current Coursera page in your open tab.</p>
+
+      <div class="actions">
+        <button id="scanBtn">Scan Current Page</button>
+        <button id="openBtn" disabled>Direct Me To Free Courses</button>
+      </div>
+
+      <p id="status" class="status">Press Scan Current Page.</p>
+
+      <section>
+        <h2>Detected Free Courses</h2>
+        <ul id="results"></ul>
+      </section>
+
+      <section class="note">
+        <h2>Compliance</h2>
+        <p>No login automation. No enroll clicks. No HTTP crawling/headless scraping.</p>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
